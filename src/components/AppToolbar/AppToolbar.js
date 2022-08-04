@@ -2,7 +2,7 @@ import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 
 const AppToolbar = () => {
   const { totalBooks } = useSelector((state) => state.cart);
@@ -19,7 +19,7 @@ const AppToolbar = () => {
             Books
           </Button>
           <Button component={NavLink} color="inherit" to="/cart">
-            <ShoppingCartIcon></ShoppingCartIcon>
+            <ShoppingCartTwoToneIcon sx={{ fontSize: 40 }} color={totalBooks > 0 ? "success" : "primary"}></ShoppingCartTwoToneIcon>
             {totalBooks ? totalBooks : ""}
           </Button>
         </Toolbar>

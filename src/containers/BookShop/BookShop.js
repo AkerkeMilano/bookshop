@@ -7,7 +7,7 @@ import "./BookShop.css";
 
 const BookShop = () => {
   const dispatch = useDispatch();
-  const { books, loading } = useSelector((state) => state.books);
+  const { books } = useSelector((state) => state.books);
 
   useEffect(() => {
     dispatch(fetchBooks());

@@ -1,25 +1,28 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { addBookToCart } from "../../store/actions/cartActions";
-import IconButton from '@mui/material/IconButton';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import IconButton from "@mui/material/IconButton";
+import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
+import CheckIcon from "@mui/icons-material/Check";
 import "./BookItem.css";
 
 const BookItem = ({ book }) => {
-    const dispatch = useDispatch();
-    const addBookInCart = (id) => {
-        dispatch(addBookToCart(id))
-    }
+  const dispatch = useDispatch();
+  const addBookInCart = (id) => {
+    dispatch(addBookToCart(id));
+  };
 
   return (
     <div className="BookItem">
-      <img src={book.img} alt={book.title} />
-      <div>{book.title}</div>
-      <div>
-        <b>{book.price} ТГ</b>
+      <div className="BookItem-img">
+        <img src={book.img} alt={book.title} />
       </div>
-      <IconButton color="primary" aria-label="add to shopping cart" onClick={() => addBookInCart(book.id)}>
-        <AddShoppingCartIcon />
-      </IconButton>
+      <div>{book.title}</div>
+      <div className="BookItem-bottom">
+        <div>{book.price} ТГ</div>
+        <IconButton color="primary" onClick={() => addBookInCart(book.id)}>
+          <ShoppingCartSharpIcon sx={{ fontSize: 40 }} />
+        </IconButton>
+      </div>
     </div>
   );
 };
