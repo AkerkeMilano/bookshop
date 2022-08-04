@@ -14,5 +14,9 @@
 }
 
 .BookItem img{
-    width: 12vw;
+    width: 10vw;
+}
+
+.BookItem-btn{
+    color: orange;
 }

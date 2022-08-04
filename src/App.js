@@ -1,9 +1,8 @@
 import "./App.css";
 import { Route, Routes, BrowserRouter, Outlet } from "react-router-dom";
 import BookShop from "./containers/BookShop/BookShop";
-import Chart from "./containers/Chart/Chart";
+import Cart from "./containers/Cart/Cart";
 import AppToolbar from "./components/AppToolbar/AppToolbar";
-import { Container } from "@mui/material";
 
 function App() {
   return (
@@ -14,15 +13,13 @@ function App() {
             <>
               <AppToolbar />
               <main>
-                <Container>
                   <Outlet />
-                </Container>
               </main>
             </>
           }
         >
           <Route path="/" element={<BookShop />} />
-          <Route path="/chart" element={<Chart />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
       </Routes>
     </BrowserRouter>

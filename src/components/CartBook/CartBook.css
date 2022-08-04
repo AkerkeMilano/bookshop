@@ -1,0 +1,37 @@
+.CartBook{
+    font-size: 18px;
+    align-items: center;
+}
+
+.CartBook-title{
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.CartBook-count{
+    width: 20vw;
+}
+
+.CartBook-count{
+    text-align: center;
+}
+.CartBook-price{
+    width: 10vw;
+    font-weight: bold;
+}
+
+.CartBook-price{
+    text-align: center;
+}
+
+.CartBook-value{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.CartBook-btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

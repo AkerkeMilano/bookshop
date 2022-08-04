@@ -6,9 +6,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import booksReducer from './store/reducers/booksReducer';
+import cartReducer from './store/reducers/cartReducer';
 
 const store = configureStore({reducer: {
   books: booksReducer,
+  cart: cartReducer
 }});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,0 +1,26 @@
+.Cart{
+    display: flex;
+    flex-direction: column;
+}
+
+.Cart h2{
+    margin: 0;
+    padding-left: 50px;
+}
+.cart-first-colm{
+    text-align: left;
+}
+
+.Cart-block{
+    display: flex;
+    padding: 50px;
+
+}
+
+.order-block{
+    font-size: 20px;
+}
+
+.Cart-no-books{
+    margin-left: 50px;
+}
