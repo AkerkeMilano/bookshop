@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import BooksList from "../../components/BooksList/BooksList";
 import { fetchBooks } from "../../store/actions/booksActions";
 import { Container } from "@mui/material";
+import Search from "../../components/Search/Search";
 import "./BookShop.css";
 
 const BookShop = () => {
@@ -16,7 +16,7 @@ const BookShop = () => {
     books && (
       <Container>
         <div className="BookShop">
-          <BooksList books={books} />
+          <Search books={books} />
         </div>
       </Container>
     )
