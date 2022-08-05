@@ -2,7 +2,6 @@ import { useDispatch } from "react-redux";
 import { addBookToCart } from "../../store/actions/cartActions";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
-import CheckIcon from "@mui/icons-material/Check";
 import "./BookItem.css";
 
 const BookItem = ({ book }) => {
@@ -10,7 +9,6 @@ const BookItem = ({ book }) => {
   const addBookInCart = (id) => {
     dispatch(addBookToCart(id));
   };
-
   return (
     <div className="BookItem">
       <div className="BookItem-img">

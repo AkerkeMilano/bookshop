@@ -1,6 +1,5 @@
 import { useState } from "react";
 import BooksList from "../BooksList/BooksList";
-import SearchIcon from '@mui/icons-material/Search';
 import "./Search.css";
 
 const Search = ({ books }) => {
